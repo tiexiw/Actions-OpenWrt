@@ -15,11 +15,13 @@
 
 # Add a feed source
 echo 'src-git smpall https://github.com/kenzok8/small' >>feeds.conf.default
+
 mkdir Modem-Support
 pushd Modem-Support
 git clone --depth=1 https://github.com/Siriling/5G-Modem-Support .
 popd
 
+pushd package
 # 5G通信模组拨号工具
 mkdir quectel_QMI_WWAN
 mkdir fibocom_QMI_WWAN
@@ -40,7 +42,7 @@ cp -rf ../Modem-Support/meig_QMI_WWAN/* meig_QMI_WWAN
 rm -rf ../package/luci-app-sms-tool
 mkdir sms-tool
 mkdir luci-app-sms-tool
-cp -rf ../Modem-Support/sms-tool/* sms-tool
-cp -rf ../Modem-Support/luci-app-sms-tool/* luci-app-sms-tool
-cp -rf ../MyConfig/configs/istoreos/general/applications/luci-app-sms-tool/* luci-app-sms-tool
+cp -rf ./Modem-Support/sms-tool/* sms-tool
+cp -rf ./Modem-Support/luci-app-sms-tool/* luci-app-sms-tool
+cp -rf ./MyConfig/configs/istoreos/general/applications/luci-app-sms-tool/* luci-app-sms-tool
 
