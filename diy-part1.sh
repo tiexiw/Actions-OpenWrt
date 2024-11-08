@@ -40,9 +40,8 @@ cp -rf ../Modem-Support/meig_QMI_WWAN/* meig_QMI_WWAN
 
 # 5G模组短信插件
 rm -rf ../package/luci-app-sms-tool
-mkdir sms-tool
 mkdir luci-app-sms-tool
-cp -rf ./Modem-Support/sms-tool/* sms-tool
-cp -rf ./Modem-Support/luci-app-sms-tool/* luci-app-sms-tool
-cp -rf ./MyConfig/configs/istoreos/general/applications/luci-app-sms-tool/* luci-app-sms-tool
+cp -rf ../Modem-Support/sms-tool/* sms-tool
+cp -rf ../Modem-Support/luci-app-sms-tool/* luci-app-sms-tool
+
 
