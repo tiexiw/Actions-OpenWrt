@@ -43,5 +43,5 @@ rm -rf ../package/luci-app-sms-tool
 mkdir luci-app-sms-tool
 cp -rf ../Modem-Support/sms-tool/* sms-tool
 cp -rf ../Modem-Support/luci-app-sms-tool/* luci-app-sms-tool
-
+popd
 
